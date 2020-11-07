@@ -2,6 +2,7 @@ package com.simon.pattern.factory.simplefactory.order;
 
 import com.simon.pattern.factory.simplefactory.pizza.CheesePizza;
 import com.simon.pattern.factory.simplefactory.pizza.GreekPizza;
+import com.simon.pattern.factory.simplefactory.pizza.PepperPizza;
 import com.simon.pattern.factory.simplefactory.pizza.Pizza;
 
 /**
@@ -18,6 +19,9 @@ public class SimpleFactory {
         } else if ("cheese".equals(type)) {
             pizza = new CheesePizza();
             pizza.setName("奶酪披萨");
+        } else if ("pepper".equals(type)) {
+            pizza = new PepperPizza();
+            pizza.setName("胡椒披萨");
         }
         return pizza;
     }
