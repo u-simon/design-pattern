@@ -11,8 +11,13 @@ public class Main {
         System.out.println(drink.cost());
 
         Drink milk = new Milk(drink);
-
         System.out.println(milk.cost() + "," + milk.getDesc());
+
+        Drink chocolate = new Chocolate(milk);
+        System.out.println(chocolate.cost() + "," + chocolate.getDesc());
+
+        Drink chocolate1 = new Chocolate(chocolate);
+        System.out.println(chocolate1.cost() + "," + chocolate1.getDesc());
 
     }
 }
