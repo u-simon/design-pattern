@@ -6,7 +6,7 @@ package com.simon.pattern.visitor;
  */
 public abstract class Action {
 
-    public abstract void getManResult(Person person);
+    public abstract void getManResult(Man man);
 
-    public abstract void getWomanResult(Person person);
+    public abstract void getWomanResult(Woman woman);
 }
